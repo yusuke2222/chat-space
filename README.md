@@ -1,6 +1,6 @@
-# データベース設計
+# database design
 
-## membersテーブル
+## members table
 
 |Column|Type|Options|
 |------|----|-------|
@@ -10,3 +10,26 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+
+## users table
+
+Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+
+### Association
+- has_many :meners
+- has many :messages
+
+
+## groups table
+
+Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unique: true|
+
+### Association
+- has_many :meners
+- has many :messages
+- has_many :users, through: :members
