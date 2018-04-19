@@ -1,0 +1,32 @@
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  float: left;
+  .header {
+    background-color: #253141;
+    height: 100px;
+    line-height: 100px;
+    }
+  .groups {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    }
+}
+
+
+// .chat-side__user {
+//   height: 15%;
+//   width:100%;
+//   background-color: #090c10;
+//   position: relative;
+// }
+
+// .chat-side__user-name {
+//   color: #FFFFFF;
+//   font-size: 20px;
+//   font-weight: bold;
+//   position: relative;
+//   margin: 0 20px;
+//   display: inline-block;
+// }
