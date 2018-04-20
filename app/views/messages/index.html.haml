@@ -2,53 +2,81 @@
 %html
   %body
     .notification
-    .wrapper
-      .side-bar
-        .header
-          %h3.header__name
-            yu
-          %ul.header__lists
-            %li.list
-              %a{:href => "/groups/new"}
-                %i.fa.fa-pencil-square-o.icon
-            %li.list
-              %a{:href => "/users/5642/edit"}
-                %i.fa.fa-cog.icon
-        .groups
-          .group
-            %a{:href => "/groups/13992/messages"}
-              .group__name
-                test
-              .group__message
-                こんにちは！
-      .chat
-        .header
-          .left-header
-            .left-header__title
+    / .wrapper
+    .side-bar
+      .header
+        %h3.header__name
+          yu
+        %ul.header__lists
+          %li.list
+            %a{:href => "/groups/new"}
+              %i.fa.fa-pencil-square-o.icon
+          %li.list
+            %a{:href => "/users/5642/edit"}
+              %i.fa.fa-cog.icon
+      .groups
+        .group
+          %a{:href => "/groups/13992/messages"}
+            .group__name
               test
-            %ul.left-header__members
-              Member：
-              %li.member
-                yu
-          .right-header
-            %a.right-header__button{:href => "/groups/13992/edit"} Edit
-        .messages.js-messages
-          .message
-            .upper-message
-              .upper-message__user-name yu
-              .upper-message__date 2018/04/19 02:45
-            .lower-message
-              %p.lower-message__content こんにちは！
-        .form
-          %form#new_message.js-form{"accept-charset" => "UTF-8", :action => "/groups/13992/messages", :enctype => "multipart/form-data", :method => "post"}
-            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-            %input{:name => "authenticity_token", :type => "hidden", :value => "dy40tp0FpflN1SVeR/XN1L2HcXO52NGWpN6qewqWwSJx6fJuHlT69HOUCQqGzcf7hVLXtpioQ1pPl4rRYx/ipQ=="}/
-            %input#message_content.form__message.js-content{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-            .form__mask
-              %label.form__mask__image{:for => "message_image"}
-                %i.fa.fa-picture-o.icon
-                %input#message_image.hidden.js-file{:name => "message[image]", :type => "file"}/
-            %input.form__submit{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+            .group__message
+              こんにちは！
+    .chat-main
+    .chat-main__header
+      .chat-main__header-group.clearfix
+      .chat-main__header-group-name
+        グループ名
+      .chat-main__header-group-edit
+        %a.chat__header-group-edit-botton{:href => "groups/13992/edit"}Edit
+      .chat-main__header-members
+        Member :
+        %i
+        yu
+      .chat-main__body
+        .chat-main__body-messages-list
+          .chat-main__body-message.clearfix
+            .chat-main__body-message-name
+              yu
+            .chat-main__body-message-time
+              2018/04/19 02:45
+            .chat-main__body-message-body
+              こんにちは！
+
+
+
+
+
+
+
+
+
+        / .header
+        /   .left-header
+        /     .left-header__title
+        /       test
+        /     %ul.left-header__members
+        /       Member：
+        /       %li.member
+        /         yu
+        /   .right-header
+        /     %a.right-header__button{:href => "/groups/13992/edit"} Edit
+        / .messages.js-messages
+        /   .message
+        /     .upper-message
+        /       .upper-message__user-name yu
+        /       .upper-message__date 2018/04/19 02:45
+        /     .lower-message
+        /       %p.lower-message__content こんにちは！
+        / .form
+        /   %form#new_message.js-form{"accept-charset" => "UTF-8", :action => "/groups/13992/messages", :enctype => "multipart/form-data", :method => "post"}
+        /     %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+        /     %input{:name => "authenticity_token", :type => "hidden", :value => "dy40tp0FpflN1SVeR/XN1L2HcXO52NGWpN6qewqWwSJx6fJuHlT69HOUCQqGzcf7hVLXtpioQ1pPl4rRYx/ipQ=="}/
+        /     %input#message_content.form__message.js-content{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        /     .form__mask
+        /       %label.form__mask__image{:for => "message_image"}
+        /         %i.fa.fa-picture-o.icon
+        /         %input#message_image.hidden.js-file{:name => "message[image]", :type => "file"}/
+        /     %input.form__submit{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
 
 
 
