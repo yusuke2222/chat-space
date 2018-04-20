@@ -30,27 +30,31 @@
       }
     }
   }
-  .groups {
+  &__groups {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 0 20px;
     }
+    &__group1 {
+      padding: 20px 0 40px;
+      &-name {
+        font-size: 15px;
+        color: #FFFFFF;
+      }
+      &-message {
+        font-size: 11px;
+        color: #FFFFFF;
+      }
+    }
+    &__group2 {
+      padding: 20px 0 40px;
+      &-name {
+        font-size: 15px;
+        color: #FFFFFF;
+      }
+      &-message {
+        font-size: 11px;
+        color: #FFFFFF;
+      }
+    }
 }
-
-
-
-// .chat-side__user {
-//   height: 15%;
-//   width:100%;
-//   background-color: #090c10;
-//   position: relative;
-// }
-
-// .chat-side__user-name {
-//   color: #FFFFFF;
-//   font-size: 20px;
-//   font-weight: bold;
-//   position: relative;
-//   margin: 0 20px;
-//   display: inline-block;
-// }
