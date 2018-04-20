@@ -2,17 +2,41 @@
   height: 100vh;
   width: 300px;
   float: left;
-  .header {
+
+  &__header {
     background-color: #253141;
     height: 100px;
     line-height: 100px;
+    padding: 0 20px;
+
+    &-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFFFFF;
+      display: inline-block;
     }
+
+    &-lists {
+      float: right;
+
+      .list1 {
+        display: inline-block;
+      }
+      .list2 {
+        display: inline-block;
+      }
+      .fa {
+        color: white;
+      }
+    }
+  }
   .groups {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 0 20px;
     }
 }
+
 
 
 // .chat-side__user {
