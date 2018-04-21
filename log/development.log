@@ -4535,3 +4535,171 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 439ms (Views: 432.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:14:14 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 504ms (Views: 499.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:15:10 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:22:11 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 497ms (Views: 484.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:23:40 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 431ms (Views: 428.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:24:06 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:25:19 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 447ms (Views: 442.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:34:52 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:34:55 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:36:58 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 85ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:38:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 472ms (Views: 458.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:40:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 462ms (Views: 455.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:40:24 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 442ms (Views: 433.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:40:29 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 51ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:42:17 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 446ms (Views: 439.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:43:37 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 444ms (Views: 439.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:44:25 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected selector or at-rule, was "}"):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/_chat.scss:57
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2480196587021854111_70225694884900'
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (167.4ms)
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:44:58 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected selector or at-rule, was "}"):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/_chat.scss:57
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2480196587021854111_70225625871680'
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yusuke/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (175.4ms)
+Started GET "/" for 127.0.0.1 at 2018-04-20 18:45:07 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 543ms (Views: 537.6ms | ActiveRecord: 0.0ms)
+
+
