@@ -9,11 +9,11 @@
           yu
         %ul.side-bar__header-lists
           %li.list1
-            %a{:href => "/groups/new"}
-              %i.fa.fa-pencil-square-o.icon
+            = link_to("/groups/new") do
+              %span.fa.fa-pencil-square-o
           %li.list2
-            %a{:href => "/users/5642/edit"}
-              %i.fa.fa-cog.icon
+            = link_to("/users/5642/edit") do
+              %span.fa.fa-cog.icon
       .side-bar__groups
         .side-bar__group1
           .side-bar__group1-name
@@ -32,9 +32,7 @@
           .chat-main__header-group-name
             グループ名
           .chat-main__header-members
-            Member :
-            %i
-            yu
+            Member : yu
         .chat-main__header-group-edit
           %a.chat-main__header-group-edit-button{:href => "groups/13992/edit"}Edit
       .chat-main__body
@@ -50,9 +48,8 @@
 
       .chat-main__footer
         .chat-main__footer-body
-          %form{action: "", method: :post}
-          %input{:type => "text", :placeholder => "type a message", :class => "text"}
-          %input{:type => "submit", :value => "Send", :class => "submit"}
-          %label{:class => "attachment"}
-            = fa_icon "image"
-
+          = form_tag("", method: :post) do
+            %input{:type => "text", :placeholder => "type a message", :class => "text"}
+            %input{:type => "submit", :value => "Send", :class => "submit"}
+            %label{:class => "attachment"}
+              = fa_icon "image"
