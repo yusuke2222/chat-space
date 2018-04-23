@@ -19,7 +19,7 @@
       }
 
       &-members {
-        color: #999999;
+        color: $gray-color;
         font-size: 12px;
       }
 
@@ -30,12 +30,12 @@
       position: absolute;
       top: 28px;
       right: 40px;
-      border: 1px solid #38AEF0;
+      border: 1px solid $blue-color;
       line-height: 40px;
 
       &-button {
         text-decoration: none;
-        color: #38AEF0;
+        color: $blue-color;
       }
     }
   }
@@ -55,19 +55,19 @@
     &-message-name {
       font-size: 16px;
       font-weight: bold;
-      color: #434A54;
+      color: $black-color;
     }
     &-message-time {
       font-size: 12px;
       padding-left: 10px;
-      color: #999999;
+      color: $gray-color;
       }
     &-message-down {
       margin-top: 10px;
     }
     &-message-comment {
       font-size: 14px;
-      color: #434A54;
+      color: $black-color;
       padding-top: 10px;
       }
   }
@@ -91,8 +91,8 @@
         float: left;
     }
     .submit {
-        color: #FFFFFF;
-        background-color: #38AEF0;
+        color: $white-color;
+        background-color: $blue-color;
         width: 100px;
         height: 50px;
         text-align: center;

@@ -12,7 +12,7 @@
     &-name {
       font-size: 16px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: $white-color;
       display: inline-block;
     }
 
@@ -39,22 +39,22 @@
       padding: 20px 0 40px;
       &-name {
         font-size: 15px;
-        color: #FFFFFF;
+        color: $white-color;
       }
       &-message {
         font-size: 11px;
-        color: #FFFFFF;
+        color: $white-color;
       }
     }
     &__group2 {
       padding: 20px 0 40px;
       &-name {
         font-size: 15px;
-        color: #FFFFFF;
+        color: $white-color;
       }
       &-message {
         font-size: 11px;
-        color: #FFFFFF;
+        color: $white-color;
       }
     }
 }
