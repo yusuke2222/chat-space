@@ -34,7 +34,7 @@
           .chat-main__header-members
             Member : yu
         .chat-main__header-group-edit
-          %a.chat-main__header-group-edit-button{:href => "groups/13992/edit"}Edit
+          %a.chat-main__header-group-edit-button{href: "groups/13992/edit"}Edit
       .chat-main__body
         .chat-main__body-message.clearfix
           .chat-main__body-message-top
@@ -48,8 +48,9 @@
 
       .chat-main__footer
         .chat-main__footer-body
-          = form_tag("", method: :post) do
-            %input{:type => "text", :placeholder => "type a message", :class => "text"}
-            %input{:type => "submit", :value => "Send", :class => "submit"}
-            %label{:class => "attachment"}
+          = form_for "" do |f|
+            = f.text_field :text, placeholder: "type a message", class: "input"
+            = f.submit "Send", class: 'submit'
+            = f.label :image, class: "attachment" do
               = fa_icon "image"
+
