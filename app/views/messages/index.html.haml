@@ -5,11 +5,10 @@
     .side-bar__header__name
       yu
     %ul.side-bar__header__lists
-      %li.new-group
-        = link_to("/groups/new") do
-          %span.fa.fa-pencil-square-o
+      = link_to "/groups/new", class: "new-group" do
+        %span.fa.fa-pencil-square-o
       %li.edit-account
-        = link_to("/users/5642/edit") do
+        = link_to "/users/5642/edit", class: "edit-account" do
           %span.fa.fa-cog.icon
   .side-bar__bottom
     = render partial:"group-message"
