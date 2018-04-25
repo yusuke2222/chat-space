@@ -10,7 +10,7 @@
     &-group {
      float:left;
 
-      &-name {
+      &__name {
       font-size: 20px;
       color: #333333;
       padding-top: 35px;
@@ -18,12 +18,12 @@
       display: inline-block;
       }
 
-      &-members {
+      &__members {
         color: $gray-color;
         font-size: 12px;
       }
 
-      &-edit {
+      &__edit {
         height: 40px;
         padding: 0 20px;
         margin-top: 28px;
@@ -33,7 +33,7 @@
         border: 1px solid $blue-color;
         line-height: 40px;
       }
-      &-edit-button {
+      &__edit-button {
         text-decoration: none;
         color: $blue-color;
       }
@@ -45,7 +45,7 @@
     overflow: scroll;
     box-sizing: border-box;
 
-    &-message-list {
+    &-message__list {
       padding-top: 26px;
      padding-left: 40px;
     }
@@ -56,27 +56,27 @@
     &-message-top {
       display: flex;
     }
-    &-message-name {
+    &-message__name {
       font-size: 16px;
       font-weight: bold;
       color: $black-color;
       float: left;
     }
-    &-message-time {
+    &-message__time {
       font-size: 12px;
       padding: 0 40px;
       float: left;
       color: $gray-color;
-      }
-    &-message-down {
+    }
+    &-message__down {
       margin-top: 10px;
     }
-    &-message-comment {
+    &-message__comment {
       font-size: 14px;
       color: $black-color;
       padding-bottom: 40px;
       clear: both;
-      }
+    }
   }
 
   &__footer {

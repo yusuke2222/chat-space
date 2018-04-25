@@ -9,14 +9,14 @@
     line-height: 100px;
     padding: 0 20px;
 
-    &-name {
+    &__name {
       font-size: 16px;
       font-weight: bold;
       color: $white-color;
       display: inline-block;
     }
 
-    &-lists {
+    &__lists {
       float: right;
 
       .list1 {
@@ -36,14 +36,14 @@
      width: 100%;
      background-color: #2f3e51;
 
-     &-groupname{
+     &-group__name{
       font-size: 15px;
       margin-bottom: 5px;
       color :$white-color;
       padding-top: 20px;
       padding-left: 20px;
-    }
-    &-groupmessage{
+      }
+    &-group__message{
       font-size: 11px;
       color :$white-color;
       padding-bottom: 40px;

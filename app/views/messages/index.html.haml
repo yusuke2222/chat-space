@@ -2,9 +2,9 @@
   .notice グループを作成しました
 .side-bar
   .side-bar__header
-    .side-bar__header-name
+    .side-bar__header__name
       yu
-    %ul.side-bar__header-lists
+    %ul.side-bar__header__lists
       %li.list1
         = link_to("/groups/new") do
           %span.fa.fa-pencil-square-o
@@ -16,18 +16,18 @@
 .chat-main
   .chat-main__header
     .chat-main__header-group
-      .chat-main__header-group-name
+      .chat-main__header-group__name
         グループ名
-      .chat-main__header-group-members
+      .chat-main__header-group__members
         Member : yu
-    .chat-main__header-group-edit
-      .chat-main__header-group-edit-button
+    .chat-main__header-group__edit
+      .chat-main__header-group__edit-button
         = link_to "Edit", "groups/13992/edit"
   .chat-main__body
-    .chat-main__body-message-list
+    .chat-main__body-message__list
       .chat-main__body-message.creafix
         = render partial:"contribute"
-      .chat-main__body-message-down
+      .chat-main__body-message__down
 
   .chat-main__footer
     .chat-main__footer-body
