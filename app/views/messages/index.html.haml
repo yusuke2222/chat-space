@@ -1,41 +1,38 @@
-!!!
-%html
-  %body
-    .wrapper
-      .notice グループを作成しました
-    .side-bar
-      .side-bar__header
-        .side-bar__header-name
-          yu
-        %ul.side-bar__header-lists
-          %li.list1
-            = link_to("/groups/new") do
-              %span.fa.fa-pencil-square-o
-          %li.list2
-            = link_to("/users/5642/edit") do
-              %span.fa.fa-cog.icon
-      .side-bar__bottom
-        = render partial:"group-message"
-    .chat-main
-      .chat-main__header
-        .chat-main__header-group
-          .chat-main__header-group-name
-            グループ名
-          .chat-main__header-members
-            Member : yu
-        .chat-main__header-group-edit
-          %a.chat-main__header-group-edit-button{href: "groups/13992/edit"}Edit
-      .chat-main__body
-        .chat-main__body-message-list
-          .chat-main__body-message.creafix
-            = render partial:"contribute"
-          .chat-main__body-message-down
+.wrapper
+  .notice グループを作成しました
+.side-bar
+  .side-bar__header
+    .side-bar__header-name
+      yu
+    %ul.side-bar__header-lists
+      %li.list1
+        = link_to("/groups/new") do
+          %span.fa.fa-pencil-square-o
+      %li.list2
+        = link_to("/users/5642/edit") do
+          %span.fa.fa-cog.icon
+  .side-bar__bottom
+    = render partial:"group-message"
+.chat-main
+  .chat-main__header
+    .chat-main__header-group
+      .chat-main__header-group-name
+        グループ名
+      .chat-main__header-members
+        Member : yu
+    .chat-main__header-group-edit
+      %a.chat-main__header-group-edit-button{href: "groups/13992/edit"}Edit
+  .chat-main__body
+    .chat-main__body-message-list
+      .chat-main__body-message.creafix
+        = render partial:"contribute"
+      .chat-main__body-message-down
 
-      .chat-main__footer
-        .chat-main__footer-body
-          = form_for "" do |f|
-            = f.text_field :text, placeholder: "type a message", class: "input"
-            = f.submit "Send", class: 'submit'
-            = f.label :image, class: "attachment" do
-              = fa_icon "image"
+  .chat-main__footer
+    .chat-main__footer-body
+      = form_for "" do |f|
+        = f.text_field :text, placeholder: "type a message", class: "input"
+        = f.submit "Send", class: 'submit'
+        = f.label :image, class: "attachment" do
+          = fa_icon "image"
 
