@@ -18,10 +18,11 @@
     .chat-main__header-group
       .chat-main__header-group-name
         グループ名
-      .chat-main__header-members
+      .chat-main__header-group-members
         Member : yu
     .chat-main__header-group-edit
-      %a.chat-main__header-group-edit-button{href: "groups/13992/edit"}Edit
+      .chat-main__header-group-edit-button
+        = link_to "Edit", "groups/13992/edit"
   .chat-main__body
     .chat-main__body-message-list
       .chat-main__body-message.creafix

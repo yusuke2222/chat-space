@@ -9,8 +9,8 @@
 
     &-group {
      float:left;
-    }
-      &-group-name {
+
+      &-name {
       font-size: 20px;
       color: #333333;
       padding-top: 35px;
@@ -23,17 +23,17 @@
         font-size: 12px;
       }
 
-    &-group-edit {
-      height: 40px;
-      padding: 0 20px;
-      margin-top: 28px;
-      position: absolute;
-      top: 28px;
-      right: 40px;
-      border: 1px solid $blue-color;
-      line-height: 40px;
-
-      &-button {
+      &-edit {
+        height: 40px;
+        padding: 0 20px;
+        margin-top: 28px;
+        position: absolute;
+        top: 28px;
+        right: 40px;
+        border: 1px solid $blue-color;
+        line-height: 40px;
+      }
+      &-edit-button {
         text-decoration: none;
         color: $blue-color;
       }
@@ -41,7 +41,7 @@
   }
   &__body {
     background-color: #FAFAFA;
-    height: calc(100vh - 100px - 90px);
+    height: calc(100vh - 90px);
     overflow: scroll;
     box-sizing: border-box;
 
