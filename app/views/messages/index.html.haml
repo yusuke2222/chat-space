@@ -5,7 +5,7 @@
       .notice グループを作成しました
     .side-bar
       .side-bar__header
-        %h3.side-bar__header-name
+        .side-bar__header-name
           yu
         %ul.side-bar__header-lists
           %li.list1
@@ -14,18 +14,8 @@
           %li.list2
             = link_to("/users/5642/edit") do
               %span.fa.fa-cog.icon
-      .side-bar__groups
-        .side-bar__group1
-          .side-bar__group1-name
-            test
-          .side-bar__group1-message
-            こんにちは！
-        .side-bar__group2
-          .side-bar__group2-name
-            グループ名
-          .side-bar__group2-message
-            まだメッセージはありません。
-
+      .side-bar__bottom
+        = render partial:"group-message"
     .chat-main
       .chat-main__header
         .chat-main__header-group
@@ -36,15 +26,10 @@
         .chat-main__header-group-edit
           %a.chat-main__header-group-edit-button{href: "groups/13992/edit"}Edit
       .chat-main__body
-        .chat-main__body-message.clearfix
-          .chat-main__body-message-top
-            .chat-main__body-message-name
-              yu
-            .chat-main__body-message-time
-              2018/04/19 02:45
+        .chat-main__body-message-list
+          .chat-main__body-message.creafix
+            = render partial:"contribute"
           .chat-main__body-message-down
-            .chat-main__body-message-comment
-              こんにちは！
 
       .chat-main__footer
         .chat-main__footer-body

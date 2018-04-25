@@ -30,31 +30,24 @@
       }
     }
   }
-  &__groups {
-    background-color: #2f3e51;
-    height: calc(100vh - 100px);
-    padding: 0 20px;
+
+  &__bottom {
+     height: 85%;
+     width: 100%;
+     background-color: #2f3e51;
+
+     &-groupname{
+      font-size: 15px;
+      margin-bottom: 5px;
+      color :$white-color;
+      padding-top: 20px;
+      padding-left: 20px;
     }
-    &__group1 {
-      padding: 20px 0 40px;
-      &-name {
-        font-size: 15px;
-        color: $white-color;
-      }
-      &-message {
-        font-size: 11px;
-        color: $white-color;
-      }
+    &-groupmessage{
+      font-size: 11px;
+      color :$white-color;
+      padding-bottom: 40px;
+      padding-left: 20px;
     }
-    &__group2 {
-      padding: 20px 0 40px;
-      &-name {
-        font-size: 15px;
-        color: $white-color;
-      }
-      &-message {
-        font-size: 11px;
-        color: $white-color;
-      }
-    }
+  }
 }
