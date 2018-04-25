@@ -1,0 +1,53 @@
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  float: left;
+
+  &__header {
+    background-color: #253141;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+      color: $white-color;
+      display: inline-block;
+    }
+
+    &__lists {
+      float: right;
+
+      .new-group {
+        display: inline-block;
+      }
+      .edit-account {
+        display: inline-block;
+      }
+      .fa {
+        color: white;
+      }
+    }
+  }
+
+  &__bottom {
+     height: 85%;
+     width: 100%;
+     background-color: #2f3e51;
+
+     &-group__name{
+      font-size: 15px;
+      margin-bottom: 5px;
+      color :$white-color;
+      padding-top: 20px;
+      padding-left: 20px;
+      }
+    &-group__message{
+      font-size: 11px;
+      color :$white-color;
+      padding-bottom: 40px;
+      padding-left: 20px;
+    }
+  }
+}
