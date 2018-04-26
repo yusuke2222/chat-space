@@ -1,7 +1,9 @@
 @import "./reset";
-@import "./variable";
+@import "config/variable";
+@import "modules/flash";
 @import "font-awesome";
 @import "./side-bar";
 @import "./chat";
 @import "./notice";
 @import "modules/user";
+
