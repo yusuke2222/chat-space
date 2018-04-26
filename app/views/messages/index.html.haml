@@ -8,8 +8,8 @@
       = link_to "/groups/new", class: "new-group" do
         %span.fa.fa-pencil-square-o
       %li.edit-account
-        = link_to "/users/5642/edit", class: "edit-account" do
-          %span.fa.fa-cog.icon
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
   .side-bar__bottom
     = render partial:"group-message"
 .chat-main
