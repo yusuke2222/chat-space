@@ -16,12 +16,28 @@
       .chat-main__body-message.creafix
         = render partial: "message"
       .chat-main__body-message__down
+.chat-main__footer
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.submit 'Send', class: 'form__submit'
+        %label.fa.fa-image.icon-edit
+          = f.file_field :image, class: 'hidden'
 
-  .chat-main__footer
-    .chat-main__footer-body
-      = form_for "" do |f|
-        = f.text_field :text, placeholder: "type a message", class: "input"
-        = f.submit "Send", class: 'submit'
-        = f.label :image, class: "attachment" do
-          = fa_icon "image"
+
+      / .form__mask
+      /   = f.label :image, class: 'form__mask__image' do
+      /     = fa_icon 'picture-o', class: 'icon'
+      /     = f.file_field :image, class: 'hidden'
+      / = f.submit 'Send', class: 'form__submit'
+
+
+  / .chat-main__footer
+  /   .chat-main__footer-body
+  /     = form_for "" do |f|
+  /       = f.text_field :text, placeholder: "type a message", class: "input"
+  /       = f.submit "Send", class: 'submit'
+  /       = f.label :image, class: "attachment" do
+  /         = fa_icon "image"
 
