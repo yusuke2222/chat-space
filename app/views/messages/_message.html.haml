@@ -1,6 +1,9 @@
 .chat-main__body-message__name
-    yu
+    = message.user.name
 .chat-main__body-message__time
-    2018/04/19 02:45
+    = format_posted_time(message.created_at)
 .chat-main__body-message__comment
-    こんにちは！
+    - if message.content.present?
+    %p.lower-message__content
+        = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
