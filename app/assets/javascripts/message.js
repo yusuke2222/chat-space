@@ -33,15 +33,13 @@ function buildHTML(message) {
       $('.chat-main__body-message').append(html);
       $('#message_image').val('');
       $('.form__message').val('');
-      $('.chat-main__body').animate({scrollTop: $('.chat-main__body')[0].scrollHeight}, 'swing');
+      $('.chat-main__body').animate({scrollTop: $('.chat-main__body')[0].scrollHeight}, 'fast');
       $('.form__submit').prop("disabled", false)
       })
       .fail(function(){
         alert('error');
       })
     })
-});
-return false
 });
 
 
