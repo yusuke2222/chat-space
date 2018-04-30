@@ -1,6 +1,7 @@
 .chat-main {
   width: calc(100% - 300px);
   float: left;
+  min-height: 100%;
 
   &__header {
      height:100px;
@@ -26,7 +27,6 @@
       &__edit {
         height: 40px;
         padding: 0 20px;
-        margin-top: 28px;
         position: absolute;
         top: 28px;
         right: 40px;
