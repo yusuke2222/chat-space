@@ -1,13 +1,13 @@
 .side-bar {
-  height: 100vh;
   width: 300px;
   float: left;
+  height: 100vh;
 
   &__header {
     background-color: #253141;
-    height: 100px;
     line-height: 100px;
     padding: 0 20px;
+    position: relative;
 
     &__name {
       font-size: 16px;
@@ -35,6 +35,7 @@
      height: 85%;
      width: 100%;
      background-color: #2f3e51;
+     overflow: scroll;
 
      &-group__name{
       font-size: 15px;
