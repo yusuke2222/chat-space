@@ -1,27 +1,27 @@
 .wrapper
   =render partial: "groups/group-message"
-  .chat-main
-    .chat-main__header
-      .chat-main__header-group
-        .chat-main__header-group__name
-          = @group.name
-        .chat-main__header-group__members
-          Member :
-          - @group.users.each do |user|
-            = "#{user.name}"
-      .chat-main__header-group__edit
-        .chat-main__header-group__edit-button
-          = link_to "Edit", "groups/13992/edit"
-    .chat-main__body
-      .chat-main__body-message__list
-        .chat-main__body-message
-          = render @messages
-        .chat-main__body-message__down
-    .chat-main__footer
-      .form
-        = form_for [@group, @message] do |f|
-          = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-          .form__mask
-            = f.submit 'Send', class: 'form__submit'
-            %label.fa.fa-image.icon-edit
-              = f.file_field :image, class: 'hidden'
+.chat-main
+  .chat-main__header
+    .chat-main__header-group
+      .chat-main__header-group__name
+        = @group.name
+        = link_to edit_group_path(@group) do
+          .chat-main__header-group__edit-button
+            Edit
+      .chat-main__header-group__members
+        Member :
+        - @group.users.each do |user|
+          = "#{user.name}"
+  .chat-main__body
+    .chat-main__body-message__list
+      .chat-main__body-message.creafix
+        = render @messages
+      .chat-main__body-message__down
+.chat-main__footer
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.submit 'Send', class: 'form__submit'
+        %label.fa.fa-image.icon-edit
+          = f.file_field :image, class: 'hidden'

@@ -1,14 +1,14 @@
 .chat-main {
-  width: calc(100vw - 300px);
+  width: calc(100% - 300px);
   float: left;
-  height: 100vh;
 
   &__header {
+     height:100px;
      border-bottom: 1px solid #eeeeee;
      padding:0 40px;
 
     &-group {
-     // float:left;
+     float:left;
 
       &__name {
       font-size: 20px;
@@ -23,32 +23,41 @@
         font-size: 12px;
       }
 
-      &__edit {
+      &__edit-button {
         height: 40px;
         padding: 0 20px;
+        margin-top: 28px;
         position: absolute;
-        top: 28px;
+        top: 10px;
         right: 40px;
         border: 1px solid $blue-color;
         line-height: 40px;
-      }
-      &__edit-button {
         text-decoration: none;
         color: $blue-color;
       }
+      // &__edit-button {
+      //   text-decoration: none;
+      //   color: $blue-color;
+      // }
     }
   }
   &__body {
-    height: calc( 100vh - 15% - 90px );
-    overflow-y: scroll;
+    background-color: #FAFAFA;
+    height: calc(100vh - 90px);
+    overflow: scroll;
+    box-sizing: border-box;
 
     &-message__list {
       padding-top: 26px;
+      padding-bottom: 90px;
      padding-left: 40px;
     }
 
     &-message.clearfix {
       padding: 20px 0;
+    }
+    &-message-top {
+      display: flex;
     }
     &-message__name {
       font-size: 16px;
@@ -61,6 +70,9 @@
       padding: 0 10px 10px;
       float: left;
       color: $gray-color;
+    }
+    &-message__down {
+      margin-top: 10px;
     }
     &-message__comment {
       font-size: 14px;
