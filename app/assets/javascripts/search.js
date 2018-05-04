@@ -35,7 +35,6 @@ function appendUser(user){
       dataType: 'json'
     })
     .done(function(users) {
-      console.log(users);
       $("#user-search-result").empty();
       if (users.length !== 0) {
         users.forEach(function(user){
@@ -58,7 +57,7 @@ function appendUser(user){
      appendGroupUser(userName, userId)
      $(this).parent().remove()
    })
-   $('#chat-group-form__users').on('click', '.js-remove-btn', function() {
+   $('#chat-group-form__users').on('click', '.user-search-remove', function() {
      $(this).parent().remove()
    })
  })
