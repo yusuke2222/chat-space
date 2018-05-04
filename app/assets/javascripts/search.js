@@ -24,6 +24,7 @@ $(function() {
 
     $("#user-search-field").on("keyup", function(){
       var input = $(this).val();
+      if (input !== "") {
       $.ajax({
         type: 'GET',
         url: '/users',
@@ -41,9 +42,10 @@ $(function() {
           appendNoUser("一致するユーザーはいません");
         }
       })
-    .fail(function() {
-      alert('ユーザー検索に失敗しました');
-    })
+      .fail(function() {
+        alert('ユーザー検索に失敗しました');
+      });
+      }
      $("#user-search-result").empty()
    })
    $('#user-search-result').on('click', '.user-search-add', function() {
