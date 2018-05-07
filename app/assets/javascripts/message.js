@@ -60,5 +60,7 @@ $(function(){
         $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight});
       });
     }
-    setInterval(getMsg, 5000);
+    if (location.pathname.match(/messages/)){
+    setInterval(getMsg, 1000);
+    }
 });
