@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message) {
     message.image ? image = `<img src=${message.image}>` : image = "";
-    var html = `<div class="chat-main__body-message-item">
+    var html = `<div class="chat-main__body-message-item" msg-id = ${message.id}>
                     <div class="chat-main__body-message__name">
                       ${message.user_name}
                     </div>
@@ -41,5 +41,24 @@ $(function(){
       .fail(function(){
         alert('error');
       })
-    })
+    });
+  function getMsg() {
+      var newMsgId = $('.chat-main__body-message-item').last().attr('msg-id');
+      var url = $('#new_message').attr('action');
+      $.ajax ({
+        type: 'GET',
+        url: url,
+        data: {id: newMsgId},
+        dataType: 'json'
+      })
+      .done(function(data){
+        if (data.length == 0) return false
+        data.forEach(function(msg) {
+          var html = buildHTML(msg);
+          $('.chat-main__body-message__list').append(html);
+        });
+        $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight});
+      });
+    }
+    setInterval(getMsg, 5000);
 });
