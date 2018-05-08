@@ -1,18 +1,18 @@
 $(function(){
   function buildHTML(message) {
-    message.image ? image = `<img src=${message.image}>` : image = "";
-    var html = `<div class="chat-main__body-message-item" msg-id = ${message.id}>
+    message.image ? image = `<img src=${ message.image }>` : image = "";
+    var html = `<div class="chat-main__body-message-item" msg-id = ${ message.id }>
                     <div class="chat-main__body-message__name">
-                      ${message.user_name}
+                      ${ message.user_name }
                     </div>
                     <div class="chat-main__body-message__time">
-                      ${message.time}
+                      ${ message.time }
                     </div>
                     <div class="chat-main__body-message__comment">
                        <p class="lower-message__content">
-                        ${message.content}
+                        ${ message.content }
                        </p>
-                    ${image}
+                    ${ image }
                     </div>
                 </div>`
     return html;
@@ -35,7 +35,7 @@ $(function(){
       $('.chat-main__body-message').append(html);
       $('#message_image').val('');
       $('.form__message').val('');
-      $('.chat-main__body').animate({scrollTop: $('.chat-main__body-message').height()}, 'fast')
+      $('.chat-main__body').animate({ scrollTop: $('.chat-main__body-message').height() }, 'fast')
       $('.form__submit').prop("disabled", false);
       })
       .fail(function(){
@@ -49,7 +49,7 @@ $(function(){
         $.ajax ({
           type: 'GET',
           url: url,
-          data: {id: newMsgId},
+          data: { id: newMsgId },
           dataType: 'json'
         })
         .done(function(data){
@@ -58,7 +58,7 @@ $(function(){
             var html = buildHTML(msg);
             $('.chat-main__body-message__list').append(html);
           });
-          $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight});
+          $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight });
         });
       }
     }
