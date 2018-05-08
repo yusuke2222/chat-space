@@ -45,22 +45,22 @@ $(function(){
   function getMsg() {
       var newMsgId = $('.chat-main__body-message-item').last().attr('msg-id');
       var url = $('#new_message').attr('action');
-      $.ajax ({
-        type: 'GET',
-        url: url,
-        data: {id: newMsgId},
-        dataType: 'json'
-      })
-      .done(function(data){
-        if (data.length == 0) return false
-        data.forEach(function(msg) {
-          var html = buildHTML(msg);
-          $('.chat-main__body-message__list').append(html);
+      if (window.location.href.match(/\/groups\/\d+\/messages/)){
+        $.ajax ({
+          type: 'GET',
+          url: url,
+          data: {id: newMsgId},
+          dataType: 'json'
+        })
+        .done(function(data){
+          if (data.length == 0) return false
+          data.forEach(function(msg) {
+            var html = buildHTML(msg);
+            $('.chat-main__body-message__list').append(html);
+          });
+          $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight});
         });
-        $('.chat-main__body').animate({ scrollTop: $('.chat-main__body')[0].scrollHeight});
-      });
+      }
     }
-    if (location.pathname.match(/messages/)){
     setInterval(getMsg, 1000);
-    }
 });
