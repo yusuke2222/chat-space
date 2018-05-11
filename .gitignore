@@ -21,3 +21,4 @@ doc/
 .idea
 .secret
 development.log
+config/secrets.yml
