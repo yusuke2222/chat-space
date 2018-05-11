@@ -31,9 +31,9 @@ namespace :deploy do
       upload!('config/secrets.yml', "#{shared_path}/config/secrets.yml")
     end
   end
+
   before :starting, 'deploy:upload'
   after :finishing, 'deploy:cleanup'
-end
 
 set :default_env, {
   rbenv_root: "/usr/local/rbenv",
@@ -43,7 +43,6 @@ set :default_env, {
 }
 
 set :linked_files, %w{ config/secrets.yml }
-
 end
 
 # Default branch is :master
